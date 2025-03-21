@@ -31,7 +31,7 @@ def set_background(image_path):
     st.markdown(background_css, unsafe_allow_html=True)
 
 # 🔹 Set Background (Updated Path Inside GitHub Repo)
-bg_image_path = "images/img1.jpg"  # Relative path inside your GitHub repo
+bg_image_path = "aiml/images/img1.jpg"  # Relative path inside your GitHub repo
 set_background(bg_image_path)
 
 # 🔹 Set up Google API Key
