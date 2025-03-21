@@ -91,6 +91,33 @@ st.markdown("""
         overflow: hidden;
         animation: moveFooter 15s linear infinite alternate;
     }
+    .stAlert {
+    background: rgba(0, 0, 0, 0.85); /* Dark Transparent Black */
+    color: #00FF66 !important; /* Neon Green Text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 255, 102, 0.5); /* Neon Glow */
+    border: 2px solid #00FF66; /* Green Neon Border */
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.stAlert:hover {
+    transform: scale(1.02); /* Slight hover effect */
+    box-shadow: 0px 6px 20px rgba(0, 255, 102, 0.8); /* Stronger glow on hover */
+}
+
+/* AI Text Animation (Optional) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stAlert p {
+    animation: fadeIn 0.6s ease-in-out;
+}
     </style>
 """, unsafe_allow_html=True)
 
